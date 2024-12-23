@@ -1,0 +1,13 @@
+azure-ai-translation-text
+azure-cognitiveservices-speech
+azure-core
+azure-identity
+azure-storage-blob
+azure-ai-textanalytics
+flask
+google-generativeai
+line-bot-sdk
+matplotlib
+Pillow
+librosa
+git+https://github.com/openai/whisper.git

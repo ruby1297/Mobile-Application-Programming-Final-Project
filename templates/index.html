@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖心理諮商系統💖</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <!-- 聊天框 -->
+        <div id="chat-box"></div>
+
+        <!-- 輸入區域 -->
+        <div id="input-container">
+            <div id="input-box">
+                <input type="text" id="message-input" placeholder="說些什麼吧～">
+                <button onclick="sendMessage()">發送</button>
+            </div>
+            <!-- 檔案與錄音功能 -->
+            <div id="file-audio-container">
+                <div class="file-audio">
+                    <label for="image-input" class="custom-file-upload" style="font-size: small;">♡上傳圖片♡</label>
+                    <input type="file" id="image-input" accept="image/*" onchange="updateFileName(this)">
+                    <span id="file-name">未選擇檔案</span>
+                </div>
+                <div class="file-audio">
+                    <button id="record-btn" onclick="startRecording()">開始錄音</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//unpkg.com/jquery"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
